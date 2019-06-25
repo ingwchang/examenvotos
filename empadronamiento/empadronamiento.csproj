@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B48DD9CF-2DC2-4F28-91E4-74EBC1A38DDF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>empadronamiento</RootNamespace>
+    <AssemblyName>empadronamiento</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="coneccion.cs" />
+    <Compile Include="Mostrar Votaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mostrar Votaciones.Designer.cs">
+      <DependentUpon>Mostrar Votaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Empadronar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Empadronar.Designer.cs">
+      <DependentUpon>Empadronar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Guatemala.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Guatemala.Designer.cs">
+      <DependentUpon>Guatemala.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Quetzaltenango.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Quetzaltenango.Designer.cs">
+      <DependentUpon>Quetzaltenango.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Retalhuleu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Retalhuleu.Designer.cs">
+      <DependentUpon>Retalhuleu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sololá.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sololá.Designer.cs">
+      <DependentUpon>Sololá.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Suchitepequez.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Suchitepequez.Designer.cs">
+      <DependentUpon>Suchitepequez.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Mostrar Votaciones.resx">
+      <DependentUpon>Mostrar Votaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Empadronar.resx">
+      <DependentUpon>Empadronar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Guatemala.resx">
+      <DependentUpon>Guatemala.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Quetzaltenango.resx">
+      <DependentUpon>Quetzaltenango.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Retalhuleu.resx">
+      <DependentUpon>Retalhuleu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sololá.resx">
+      <DependentUpon>Sololá.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Suchitepequez.resx">
+      <DependentUpon>Suchitepequez.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\object1828597693.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1492812.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4eec593d797aba182a9a144e696b7143.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ZURY-RIOS-FACEBOOK-PERSONAL.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\voto-nulo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\26055832_1968010913451979_4426036734438700344_n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\encuentro-por-guatemala.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fcn_logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\índice.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1200px-Pan-responde-logo.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1200px-PRI_Logo.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LOGO-WINAQ.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo-web.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\urng.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tKudaWiu.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\partidoverde_planamayor2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\o.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GRAN-ALIANZA-NACIONAL.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
